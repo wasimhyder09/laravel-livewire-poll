@@ -38,5 +38,7 @@ class CreatePoll extends Component {
         ->all()
     );
     $this->reset(['title', 'options']);
+
+    $this->dispatch('pollCreated');
   }
 }
